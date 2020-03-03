@@ -1,0 +1,6 @@
+package com.example.snoopy.demo.controller;
+
+public class elsaResponseController {
+	// 엘사는 "아니 ^^" 하고 대답을 하다가 exception 발생시킨다. 
+	
+}

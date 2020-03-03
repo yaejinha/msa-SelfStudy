@@ -1,0 +1,6 @@
+package com.example.snoopy.demo.data;
+
+@XmlRootElement(name = "itemList")
+public class busInfo {
+
+}

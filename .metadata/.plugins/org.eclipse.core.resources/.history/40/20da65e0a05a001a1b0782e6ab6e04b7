@@ -1,0 +1,17 @@
+package com.example.snoopy.demo;
+
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
+
+public class HttpClientFactory {
+	// resttemplate 기본 세팅 넣어놓고 그냥 주입해서 쓸 용도
+	public HttpClient getHttpClient() {
+		HttpComponentsClientHttpRequestFactory httpRequestFactory = new HttpComponentsClientHttpRequestFactory(); 
+		httpRequestFactory.setConnectTimeout(2000); 
+		httpRequestFactory.setReadTimeout(3000); 
+		HttpClient httpClient = HttpClientBuilder.create() .setMaxConnTotal(200) .setMaxConnPerRoute(20) .build(); 
+		httpRequestFactory.setHttpClient(httpClient);
+
+	}
+}

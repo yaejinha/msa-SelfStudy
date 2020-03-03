@@ -1,0 +1,16 @@
+package com.example.snoopy.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class elsaResponseController {
+	// 엘사는 "아니 ^^" 하고 대답을 하다가 exception 발생시킨다.  간단한거라서 컨트롤러에서 모두 처
+    
+	@GetMapping("/heyElsa")
+	@ResponseBody
+	public String respToAnna() {
+    	return "아니 ^^";
+    }
+}

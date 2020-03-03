@@ -1,0 +1,4 @@
+server.port:8099
+eureka.client.serviceUrl.defaultZone  = http://localhost:8761/eureka
+spring.application.name = eurekaclient
+eureka.client.initial-instance-info-replication-interval-seconds =5

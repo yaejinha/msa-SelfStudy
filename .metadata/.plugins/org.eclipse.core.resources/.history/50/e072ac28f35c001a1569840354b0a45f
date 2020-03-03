@@ -1,0 +1,5 @@
+eureka.client.registerWithEureka = false
+eureka.client.fetchRegistry = false
+server.port = 8761
+eureka.server.eviction-interval-timer-in-ms =5
+eureka.server.enable-self-preservation=false

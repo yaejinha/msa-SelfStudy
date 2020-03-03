@@ -1,0 +1,4 @@
+server.port:8099
+eureka.client.serviceUrl.defaultZone  = http://localhost:8099/start
+spring.application.name = eurekaclient
+eureka.client.fetchRegistry = false

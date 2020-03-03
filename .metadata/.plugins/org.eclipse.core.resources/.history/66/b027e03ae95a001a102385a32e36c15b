@@ -1,0 +1,32 @@
+package com.example.snoopy.demo.data;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "msgBody")
+public class busInfo {
+	public String busRouteId;
+
+	public String getBusRouteId() {
+		return busRouteId;
+	}
+
+	public void setBusRouteId(String busRouteId) {
+		this.busRouteId = busRouteId;
+	}
+	
+	public class itemList{
+		public String busRouteId ;
+		public String busRouteNm ;
+		public String corpNm ;
+		public String edStationNm ;
+		public String firstBusTm ;
+		public String firstLowTm ;
+		public String lastBusTm ;
+		public String lastBusYn ;
+		public String lastLowTm ;
+		public String length ;
+		public String routeType ;
+		public String stStationNm ;
+		public String term ;
+	}
+}

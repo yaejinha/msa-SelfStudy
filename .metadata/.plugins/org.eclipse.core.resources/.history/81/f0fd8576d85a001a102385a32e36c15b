@@ -1,0 +1,23 @@
+package com.example.snoopy.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.example.snoopy.demo.service.annaService;
+
+@Controller
+public class annaRequestController {
+	//겨울왕국 안나처럼 눈사람 만들겠냐고 계속 물어봄 
+	//응답이 오면 ok bye. 3초동안 안오면 문 덜컥 열기 fallback 
+	@Autowired
+	private  annaService anna;
+	
+	@GetMapping("/start")
+	@ResponseBody
+	public String talkToElsa() throws Exception {
+		return anna.askElsa();
+	}
+
+}

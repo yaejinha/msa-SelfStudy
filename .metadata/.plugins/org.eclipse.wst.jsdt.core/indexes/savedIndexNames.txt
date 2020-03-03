@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/hayejin/Desktop/COP/Snoopy/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+348454274.index
+1333610120.index
+4153247254.index
+782892632.index
+4079922910.index
+3428983700.index
+1830427897.index
