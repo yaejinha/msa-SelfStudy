@@ -2917,3 +2917,6 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-03 19:53:05.458
 !MESSAGE executing callback sts4.classpath.ietTpSrg SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2020-03-03 20:27:15.278
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
